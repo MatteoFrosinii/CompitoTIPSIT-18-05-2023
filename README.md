@@ -1,18 +1,18 @@
-## Getting Started
+## Compito TIPSIT 18/05/2023
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+VERIFICA THREAD FILA C
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+Otto amici decidono di fare una gara di velocità. Scelgono quindi di andare a correre sulla pista di go-kart che si trova a pochi chilometri di distanza dalla loro città. 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Il gestore della pista, per questioni di sicurezza, ha stabilito che possono correre solo 4 kart per volta e che ciascun pilota può effettuare non più di 5 giri. 
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Simulare la suddetta situazione in Java, utilizzando un Monitor ( cioè una classe con uno o più  metodi Java con il costrutto synchronized ). 
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Scrivere un programma che simuli la gara di velocità rispettando i vincoli imposti dal gestore della pista. Ciascun pilota, rappresentato da un thread, avente un nome,  intraprende le seguenti azioni:
 
-## Dependency Management
+− sale sul kart ed entra in pista (se in pista ci sono già 4 kart attende che uno dei piloti termini i giri a disposizione)
+− effettua i giri di pista ( simulare un tempo variabile tra i 1 e 2 secondi per ogni giro )
+− torna ai box, scende dal go-kart e lascia la pista
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Nel metodi del Monitor gestire i vincoli sulla mutua esclusione e sugli accessi limitati.
